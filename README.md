@@ -39,7 +39,7 @@ Apesar da evolução, as redes ainda entraram em overfitting antes de alcançare
 Dando continuidade à busca pelo "ponto de equilíbrio", experimentamos outras arquiteturas intermediárias, incluindo GoogLeNet, ShuffleNet e, por fim, MobileNetV2, com resultados progressivamente melhores em cada. A MobileNetV2 destacou-se como a melhor solução encontrada, atingindo 80% de acurácia na validação, a melhor performance obtida ao longo de todo o projeto, e curvas de perda bem comportadas.
 
 Curva da MobileNetV2: 
-![Descrição da imagem](mobilenetv2.png)
+![Descrição da imagem](mobilenetv2.jpeg)
 Melhores métricas: 
 Epoch: 8/35 
 	Training: Loss - 0.0250, Accuracy - 98.9975%, 
