@@ -7,7 +7,9 @@ Este repositório se refere a entrega final da disciplina. A atividade tinha com
 Trata-se de um problema de classificação binária: com COVID-19 (label 0), 342 imagens; saudável (label 1): 193 imagens.
 O dataset apresenta um leve desbalanceamento entre as classes (cerca de 65% - 35%), o que é importante destacar para os próximos passos.
 
-Esse repositório está organizado da seguinte forma: cada arquivo tem, em seu nome, as redes que foram treinadas ali. Os preâmbulos dos arquivos são os mesmos (importação dos dados + funções gerais, como treino e validação). Os arquivos podem ser consultados em qualquer ordem, mas sugerimos seguir a ordem cronológica com que trabalhamos.
+Esse repositório está organizado da seguinte forma: cada arquivo tem, em seu nome, as redes que foram treinadas ali, na mesma ordem em que estão no código. Cada uma está organizada dentro de um tópico, ou índice, dentro do notebook, de maneira a facilitar sua localização. 
+Os preâmbulos dos arquivos são os mesmos para os notebooks (importação dos dados + funções gerais, como treino e validação). 
+Os arquivos podem ser consultados em qualquer ordem, mas sugerimos seguir a ordem cronológica com que trabalhamos, descrita a seguir. Para facilitar essa consulta em particular, descrevemos no final desse README.md a sequência de arquivos a serem consultados e quais redes devem ser consultadas em cada, Buscamos organizar da melhor forma para facilitar a compreensão.
 
 DESENVOLVIMENTO
 
@@ -19,7 +21,9 @@ Apesar dos ajustes e testes realizados, os resultados continuaram insatisfatóri
 
 Junto ao professor, levantamos a hipótese de que as conexões residuais das arquiteturas testadas poderiam estar propagando features irrelevantes para o nosso contexto específico. Isso seria plausível, considerando que os modelos pré-treinados dispoíveis no Pytorch foram originalmente treinados no dataset ImageNet, que contém imagens de alta variedade, como mamíferos, veículos e outros objetos cotidianos, bastante distintos de radiografias de tórax.
 
-Diante dessa possível limitação, buscamos por modelos pré-treinados em domínios mais semelhantes ao nosso. Encontramos, então, a arquitetura CheXNet (https://github.com/arnoweng/CheXNet/tree/master) e também a biblioteca torchxrayvision (https://mlmed.org/torchxrayvision/), que oferecem modelos treinados especificamente em grandes conjuntos de radiografias e que, portanto, seguindo o hipótese levantada, extrairiam features mais relevantes para esse tipo de imagem médica.
+Paralelamente, buscamos desenvolver, também, arquiteturas mais complexas do zero. Embora não tivéssemos muitas expectativas, já que o tamanho do dataset era pequeno demais, quisemos explorar essa possibilidade porque, de acordo com nossa principal referência bibliográfica, redes "custom made", como chamamos elas, são muito usadas nesse contexto, tanto quanto transfer learning de redes prontas. No entanto, ao invés de definir uma arquitetura do zero "no escuro", buscamos mais referências de arquiteturas que apresentaram bons resultados no mesmo problema ou em problemas semelhantes, e buscamos implementar e treinar elas, ou uma arquitetura inpirada nessas. Ainda assim, os resultados não foram muito diferentes do que já tínhamos conseguido. 
+
+Retomando as hipóteses surgidas nos testes com as famílias DenseNet e ResNet, diante da possível limitação referente ao contexto, buscamos por modelos pré-treinados em domínios mais semelhantes ao nosso. Encontramos, então, a arquitetura CheXNet (https://github.com/arnoweng/CheXNet/tree/master) e também a biblioteca torchxrayvision (https://mlmed.org/torchxrayvision/), que oferecem modelos treinados especificamente em grandes conjuntos de radiografias e que, portanto, seguindo o hipótese levantada, extrairiam features mais relevantes para esse tipo de imagem médica.
 
 Na primeira abordagem, utilizamos a técnica de transfer learning tradicional, e na segunda, aplicamos tanto o transfer learning tradicional quanto o fine-tuning, retreinamento, além da camada densa, a última camada convolucional. Embora os resultados obtidos ainda não tenham sido satisfatórios, observamos alguns progressos relevantes.
 
