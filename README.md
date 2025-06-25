@@ -40,7 +40,7 @@ Finalmente obtivemos resultados mais promissores! Conseguimos fazer com que a re
 
 Apesar da evolução, as redes ainda entraram em overfitting antes de alcançarem uma performance plenamente satisfatória. No entanto, essas experimentações foram guias importantes para os próximos passos. Decidimos seguir com uma estratégia incremental, explorando arquiteturas próximas dessas, porém mais leves. Testamos a SqueezeNet, mas ela voltou a apresentar comportamento de underfitting, se mostrando excessivamente simples.
 
-Dando continuidade à busca pelo "ponto de equilíbrio", experimentamos outras arquiteturas intermediárias, incluindo GoogLeNet, ShuffleNet e, por fim, MobileNetV2, com resultados progressivamente melhores em cada. A MobileNetV2 destacou-se como a melhor solução encontrada, atingindo 80% de acurácia na validação, a melhor performance obtida ao longo de todo o projeto, e curvas de perda bem comportadas.
+Dando continuidade à busca pelo "ponto de equilíbrio", experimentamos outras arquiteturas intermediárias, incluindo GoogLeNet, ShuffleNet, EfficientNet e, por fim, MobileNetV2, com resultados progressivamente melhores em cada. A MobileNetV2 destacou-se como a melhor solução encontrada, atingindo 80% de acurácia na validação, a melhor performance obtida ao longo de todo o projeto, e curvas de perda bem comportadas.
 
 Curva da MobileNetV2: 
 ![Descrição da imagem](mobilenetv2.jpeg)
@@ -48,3 +48,14 @@ Melhores métricas:
 Epoch: 8/35 
 	Training: Loss - 0.0250, Accuracy - 98.9975%, 
 	Validation : Loss - 0.9580, Accuracy - 80.0000%, Recall - 0.6500
+
+
+ SEQUÊNCIA CRONOLÓGICA DOS ARQUIVOS
+ 1) consultar cnnsimples em cnnsimples_resnet18_resnet34_shufflenet_efficientnet.ipynb
+ 2) consultar familiadensenet_familiaresnet.ipynb (arquivo todo)
+ 3) consultar transferlearning_chexnet_torchxrayvision (arquivo todo)
+ 4) consultar resnet 18 e resnet 34 em cnnsimples_resnet18_resnet34_shufflenet_efficientnet.ipynb e resnet em customcnn_resnet_squeezenet_mobilenet.ipynb
+ 5) consultar shufflenet e efficientnet em cnnsimples_resnet18_resnet34_shufflenet_efficientnet.ipynb
+ 6) consultar shufflenet_googlenet.ipynb (arquivo todo)
+ 7) consultar squeezenet e mobilenet em customcnn_resnet_squeezenet_mobilenet.ipynb
+ 8) consultar mobilenet.ipynb (arquivo todo)
