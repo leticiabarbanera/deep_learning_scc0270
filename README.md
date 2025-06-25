@@ -59,3 +59,5 @@ Epoch: 8/35
  6) consultar shufflenet_googlenet.ipynb (arquivo todo)
  7) consultar squeezenet e mobilenet em customcnn_resnet_squeezenet_mobilenet.ipynb
  8) consultar mobilenet.ipynb (arquivo todo)
+
+*observação: os principais artigos consultados estão referenciados nos notebooks, com os respectivos links para acesso
