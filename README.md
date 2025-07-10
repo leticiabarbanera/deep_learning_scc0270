@@ -12,6 +12,7 @@ Os preâmbulos dos arquivos são os mesmos para os notebooks (importação dos d
 Os arquivos podem ser consultados em qualquer ordem, mas sugerimos seguir a ordem cronológica com que trabalhamos, descrita a seguir. Para facilitar essa consulta em particular, descrevemos no final desse README.md a sequência de arquivos a serem consultados e quais redes devem ser consultadas em cada, Buscamos organizar da melhor forma para facilitar a compreensão.
 
  SEQUÊNCIA CRONOLÓGICA DOS ARQUIVOS
+ 
  ENTREGA I - FOCO EM IMAGENS
  1) consultar cnnsimples em cnnsimples_resnet18_resnet34_shufflenet_efficientnet.ipynb
  2) consultar familiadensenet_familiaresnet.ipynb (arquivo todo)
