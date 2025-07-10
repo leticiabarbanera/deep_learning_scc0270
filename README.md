@@ -28,5 +28,6 @@ ENTREGA II - FOCO EM TEXTO
 
 ENTREGA FINAL - REDE MULTIMODAL
 1) multimodal.ipynb
+2) modelo_multimodal_final
 
 *observação: os principais artigos consultados estão referenciados nos notebooks, com os respectivos links para acesso
