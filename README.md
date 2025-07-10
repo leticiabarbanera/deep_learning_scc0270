@@ -27,7 +27,8 @@ ENTREGA II - FOCO EM TEXTO
 1) consultar processing_texts.ipynb
 
 ENTREGA FINAL - REDE MULTIMODAL
-1) multimodal.ipynb
-2) modelo_multimodal_final
+1) errors_analysis.ipynb
+2) multimodal.ipynb
+3) modelo_multimodal_final
 
 *observação: os principais artigos consultados estão referenciados nos notebooks, com os respectivos links para acesso
