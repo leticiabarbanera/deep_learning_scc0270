@@ -1,4 +1,4 @@
-# redes_neurais_SCC0270
+# Neural Networks
 
 ## INTRODUCTION
 
